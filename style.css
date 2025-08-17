@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 811px;
+    margin-inline: auto;
+}
+body {
+    text-align: center;
+    font-weight: bold;
+    background-color: hsl(240, 100%, 81%);
+}
+header {
+    max-height: 80px;
+}
+p {
+    font-size: 23px;
+}
+.sports {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+.basics {
+    margin-bottom: 23px;
+    display: grid;
+    align-items: center;
+    gap: 8px;
+}
+@media (min-width: 650px) {
+    .basics {
+        grid-auto-flow: row;
+        grid-auto-rows: 1fr;
+        gap: 0;
+    }
+}
+.numbers a {
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 13px;
+    margin-right: 18px;
+}
+.numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+.numberNames {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 13px;
+}
+.numberNames p {
+    margin-left: 48px;
+    margin-right: 53px;
+}

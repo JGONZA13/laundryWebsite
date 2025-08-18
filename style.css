@@ -22,6 +22,9 @@ p {
     gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 }
+#reviewImg {
+    height: 100px;
+}
 .basics {
     margin-bottom: 23px;
     display: grid;
@@ -31,8 +34,10 @@ p {
 @media (min-width: 650px) {
     .basics {
         grid-auto-flow: row;
-        grid-auto-rows: 1fr;
-        gap: 0;
+        gap: 13px;
+    }
+    #reviewImg {
+        height: 120px;
     }
 }
 .numbers a {
